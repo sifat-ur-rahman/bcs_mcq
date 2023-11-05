@@ -31,7 +31,7 @@ const handleSubmit = (event) => {
   return (
     <div data-aos="fade-down"
     data-aos-easing="linear"
-    data-aos-duration="500" className="lg:container mx-auto pt-40 h-screen flex flex-col items-center">
+    data-aos-duration="500" className="lg:container mx-auto pt-32 pb-14 h-screen flex flex-col items-center">
       <form  onSubmit={handleSubmit}>
       <div className=' py-2 px-3 mb-6 text-xl rounded-lg'>
       <div className=" text-sm font-normal relative h-11 w-[300px] lg:min-w-[600px]">
