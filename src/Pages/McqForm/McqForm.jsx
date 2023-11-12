@@ -20,7 +20,8 @@ const handleSubmit = (event) => {
           question,
           subject,
           answer,
-          explanation
+          explanation,
+          date : new Date
         }
 
         console.log(QnA)
@@ -48,7 +49,7 @@ const handleSubmit = (event) => {
       <div className=" text-sm font-normal relative h-11 w-[300px] lg:min-w-[600px]">
       <select name='subject' className=" peer h-full w-full border-b border-blue-600 bg-transparent pt-4 pb-1.5 font-sans text-lg font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-600 focus:border-blue-400 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50">
         {
-          categoryData.map((e) => <option key={e.i} className="bg-slate-700 text-white w-[300px]" >{e.name}</option>)
+          categoryData.map((e) => <option key={e.i} className="bg-purple-950 text-white w-full" >{e.name}</option>)
         }
    
 
