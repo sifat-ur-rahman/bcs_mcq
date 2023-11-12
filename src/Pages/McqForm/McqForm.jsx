@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Swal from "sweetalert2";
 
 
 function McqForm() {
@@ -22,6 +23,15 @@ const handleSubmit = (event) => {
         }
 
         console.log(QnA)
+        Swal.fire({
+          title: "Good job!",
+          text: "You clicked the button!",
+          icon: "success",
+          iconColor:"#00FF00",
+          color: "#ffffff",
+          background: "#ad0efd",
+          
+        });
 };
 
 
@@ -84,8 +94,8 @@ const handleSubmit = (event) => {
           </div>
           </div>
           <div className="flex flex-col items-end">
-
-      <input  className=" btn common-btn" type="submit" />
+          <button className="btn common-btn" type="submit">Save</button>
+      {/* <input  className=" " alt="" type="submit" /> */}
           </div>
     </form>
     </div>
