@@ -3,6 +3,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Main from "../Layouts/Main";
 import Home from "../Pages/Home/Home";
 import McqForm from "../Pages/McqForm/McqForm";
+import QnAPage from "../Pages/QnAPage/QnAPage";
 
 
 export const router = createBrowserRouter([
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
         {
           path: "/addMCQ",
           element: <McqForm />,
+        },
+        {
+          path:"allMcQ/:category",
+          element:<QnAPage/>
         },
 
         {

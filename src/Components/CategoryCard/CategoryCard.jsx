@@ -6,7 +6,7 @@ import Counter from "../Counter/Counter"
 function CategoryCard({category}) {
     const {categoryName, describe,name, img}= category
   return (
-    <Link className="flex items-center border-2 rounded-lg border-slate-400 px-4 py-2 w-full" to={`/category/${categoryName}`}>
+    <Link className="flex items-center border-2 rounded-lg border-slate-400 px-4 py-2 w-full" to={`/allMcQ/${categoryName}`}>
 
         <div>
             <img className="w-44 h-20 rounded-s-lg" src={img} alt="" />
